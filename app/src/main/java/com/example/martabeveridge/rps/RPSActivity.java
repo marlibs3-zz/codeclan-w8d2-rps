@@ -29,14 +29,24 @@ public class RPSActivity extends AppCompatActivity {
     }
 
     public void onRockButtonClicked(View rockButton) {
-        Log.d(getClass().toString(), "onRockButtonClicked was called.");
+        String playerChoice = "Rock";
+        String computerChoice = RPS.randomComputerChoice();
+        String result = RPS.compareAnswers( playerChoice, computerChoice);
+        resultText.setText(result);
     }
 
     public void onPaperButtonClicked(View paperButton) {
-        Log.d(getClass().toString(), "onPaperButtonClicked was called.");
+        String playerChoice = "Paper";
+        String computerChoice = RPS.randomComputerChoice();
+        String result = RPS.compareAnswers( playerChoice, computerChoice);
+        resultText.setText(result);
     }
 
     public void onScissorButtonClicked(View scissorButton) {
-        Log.d(getClass().toString(), "onScissorButtonClicked was called.");
+        String playerChoice = "Scissors";
+        String computerChoice = RPS.randomComputerChoice();
+        String result = RPS.compareAnswers( playerChoice, computerChoice);
+        resultText.setText(result);
+
     }
 }
