@@ -47,6 +47,6 @@ public class RPSActivity extends AppCompatActivity {
         String computerChoice = RPS.randomComputerChoice();
         String result = RPS.compareAnswers( playerChoice, computerChoice);
         resultText.setText(result);
-
     }
+
 }

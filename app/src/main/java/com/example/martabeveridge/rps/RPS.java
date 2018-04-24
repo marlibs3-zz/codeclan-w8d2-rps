@@ -6,7 +6,7 @@ public class RPS {
 
 
     public static String randomComputerChoice(){
-        String result = ""; // Paper, Scissors, Rock
+        String result = "";
         Random rand = new Random();
         int randomNumber = rand.nextInt(3) + 1;
 
@@ -22,21 +22,21 @@ public class RPS {
 
     public static String compareAnswers(String playerChoice, String computerChoice){
 
-        String winnerBlurb = ""; // "User won!", "Computer won!", "It's a Draw!"
+        String winnerBlurb = "";
 
         if (playerChoice.equals(computerChoice)){
-            winnerBlurb = "It's a draw";
+            winnerBlurb = "It's a draw. ";
         }else if ((playerChoice.equals("Rock") && computerChoice.equals("Scissors"))
                 || (playerChoice.equals("Paper") && computerChoice.equals("Rock") )
                 || (playerChoice.equals("Scissors") && computerChoice.equals("Paper"))){
-            winnerBlurb = "Player Wins!";
+            winnerBlurb = "Player Wins! ";
         }else{
-            winnerBlurb = "Computer wins!";
+            winnerBlurb = "Computer wins! ";
         }
 
 
         String result = winnerBlurb ;
-        result +=  " Player played: " + playerChoice + ", Computer played: "+computerChoice;
+        result +=  "You played: " + playerChoice + ", Computer played: "+computerChoice;
 
         return  result;
     }
