@@ -55,16 +55,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
+            android:contentDescription="TODO"
+            android:onClick="onRockButtonClicked"
             app:layout_constraintStart_toEndOf="@+id/scissorButtonID"
             app:layout_constraintTop_toBottomOf="@+id/playerNameID"
-            app:srcCompat="@drawable/ic_wb_cloudy_black_24dp"
-            android:contentDescription="TODO" />
+            app:srcCompat="@drawable/ic_wb_cloudy_black_24dp" />
 
         <ImageButton
             android:id="@+id/paperButtonID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onPaperButtonClicked"
             app:srcCompat="@drawable/ic_content_copy_black_24dp" />
 
         <ImageButton
@@ -72,6 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="76dp"
+            android:onClick="onScissorButtonClicked"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_content_cut_black_24dp" />
