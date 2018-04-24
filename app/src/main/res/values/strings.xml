@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">RPS</string>
-    <string name="player_one_name">Please enter your name</string>
+    <string name="player_name">Please enter your name</string>
 </resources>
