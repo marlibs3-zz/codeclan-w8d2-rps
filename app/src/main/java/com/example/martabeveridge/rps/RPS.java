@@ -25,20 +25,18 @@ public class RPS {
         String winnerBlurb = "";
 
         if (playerChoice.equals(computerChoice)){
-            winnerBlurb = "It's a draw. ";
+            winnerBlurb = "it's a draw. ";
         }else if ((playerChoice.equals("Rock") && computerChoice.equals("Scissors"))
                 || (playerChoice.equals("Paper") && computerChoice.equals("Rock") )
                 || (playerChoice.equals("Scissors") && computerChoice.equals("Paper"))){
-            winnerBlurb = "Player Wins! ";
+            winnerBlurb = "you win! ";
         }else{
-            winnerBlurb = "Computer wins! ";
+            winnerBlurb = "the computer wins! ";
         }
 
+        String result = "You played " + playerChoice.toLowerCase() + " and the computer played " +computerChoice.toLowerCase() + ". \n \n Therefore, " + winnerBlurb;
 
-        String result = winnerBlurb ;
-        result +=  "You played: " + playerChoice + ", Computer played: "+computerChoice;
-
-        return  result;
+        return result;
     }
 
 
