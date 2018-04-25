@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 public class RPSActivity extends AppCompatActivity {
 
-    EditText playerName;
     TextView resultText;
     ImageButton rockButton;
     ImageButton paperButton;
@@ -21,7 +20,6 @@ public class RPSActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rps);
 
-        playerName = findViewById(R.id.playerNameID);
         resultText = findViewById(R.id.resultTextID);
         rockButton = findViewById(R.id.rockButtonID);
         paperButton = findViewById(R.id.paperButtonID);
