@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/resultTextID"
-        android:layout_width="242dp"
+        android:layout_width="301dp"
         android:layout_height="57dp"
         android:layout_marginBottom="32dp"
         android:layout_marginEnd="32dp"
@@ -67,16 +67,18 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="303dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="64dp"
         android:layout_marginLeft="64dp"
         android:layout_marginRight="64dp"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="32dp"
-        android:text="Rock, paper, scissors?"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="Pick one of these objects for your deadly fight"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
