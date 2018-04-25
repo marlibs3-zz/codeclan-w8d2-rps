@@ -1,5 +1,6 @@
 package com.example.martabeveridge.rps;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,7 +21,6 @@ public class RPSActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rps);
 
-        resultText = findViewById(R.id.resultTextID);
         rockButton = findViewById(R.id.rockButtonID);
         paperButton = findViewById(R.id.paperButtonID);
         scissorsButton = findViewById(R.id.scissorButtonID);
@@ -30,21 +30,27 @@ public class RPSActivity extends AppCompatActivity {
         String playerChoice = "Rock";
         String computerChoice = RPS.randomComputerChoice();
         String result = RPS.compareAnswers( playerChoice, computerChoice);
-        resultText.setText(result);
+        Intent intent = new Intent(this, AnswerActivity.class);
+        intent.putExtra("result", result);
+        startActivity(intent);
     }
 
     public void onPaperButtonClicked(View paperButton) {
         String playerChoice = "Paper";
         String computerChoice = RPS.randomComputerChoice();
         String result = RPS.compareAnswers( playerChoice, computerChoice);
-        resultText.setText(result);
+        Intent intent = new Intent(this, AnswerActivity.class);
+        intent.putExtra("result", result);
+        startActivity(intent);
     }
 
     public void onScissorButtonClicked(View scissorButton) {
         String playerChoice = "Scissors";
         String computerChoice = RPS.randomComputerChoice();
         String result = RPS.compareAnswers( playerChoice, computerChoice);
-        resultText.setText(result);
+        Intent intent = new Intent(this, AnswerActivity.class);
+        intent.putExtra("result", result);
+        startActivity(intent);
     }
 
 }
